@@ -8,7 +8,7 @@ export async function convert(
   option: string,
   logging = "-quiet",
 ) {
-  const bin = cwebp();
+  const bin = await cwebp();
   if (bin) {
     const params: string[] = [
       bin,
@@ -24,6 +24,9 @@ export async function convert(
   }
 }
 
-export async function batchConvert(dir: string, option: string, logging?: string) {
-
+export async function batchConvert(
+  dir: string,
+  option: string,
+  logging?: string,
+) {
 }
