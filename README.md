@@ -5,6 +5,9 @@
 ## developing
 
 TODO: auto download bin
+
 TODO: test for win64
+
 TODO: batch convert
+
 TODO: concurrency control
