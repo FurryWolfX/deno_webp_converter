@@ -27,7 +27,6 @@ export default async function cwebp(): Promise<string> {
   }
 
   binFile = path.resolve(config.binDirPath, binName);
-  console.log("binFile", binFile, await exists(binFile));
 
   if (!(await exists(config.binDirPath))) {
     Deno.mkdirSync(config.binDirPath);
