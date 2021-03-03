@@ -28,6 +28,8 @@ export default async function cwebp(): Promise<string> {
 
   binFile = path.resolve(config.binDirPath, binName);
 
+  await Deno.chmod(binFile, 0o764);
+
   if (!(await exists(config.binDirPath))) {
     Deno.mkdirSync(config.binDirPath);
   }
